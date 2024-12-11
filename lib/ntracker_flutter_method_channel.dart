@@ -16,7 +16,7 @@ class MethodChannelNtrackerFlutter extends NtrackerFlutterPlatform {
   }
 
   @override
-  Future<void> init(String siteId) async {
-    await methodChannel.invokeMethod('init', siteId);
+  Future<void> initialize(String siteId) async {
+    await methodChannel.invokeMethod('initialize', siteId);
   }
 }

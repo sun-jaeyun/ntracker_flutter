@@ -4,15 +4,12 @@ import 'package:ntracker_flutter/ntracker_flutter_platform_interface.dart';
 import 'package:ntracker_flutter/ntracker_flutter_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class MockNtrackerFlutterPlatform
-    with MockPlatformInterfaceMixin
-    implements NtrackerFlutterPlatform {
-
+class MockNtrackerFlutterPlatform with MockPlatformInterfaceMixin implements NtrackerFlutterPlatform {
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
-  
+
   @override
-  Future<void> init(String siteId) {
+  Future<void> initialize(String siteId) {
     throw UnimplementedError();
   }
 }

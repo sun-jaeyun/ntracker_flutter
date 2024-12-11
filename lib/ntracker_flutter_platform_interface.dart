@@ -27,7 +27,7 @@ abstract class NtrackerFlutterPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  Future<void> init(String siteId) {
-    throw UnimplementedError('init() has not been implemented.');
+  Future<void> initialize(String siteId) {
+    throw UnimplementedError('initialize() has not been implemented.');
   }
 }

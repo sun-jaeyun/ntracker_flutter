@@ -4,11 +4,17 @@ PODS:
     - Flutter
   - ntracker_flutter (0.0.1):
     - Flutter
+    - NTrackerSDKExt
+  - NTrackerSDKExt (2.0.1)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
   - ntracker_flutter (from `.symlinks/plugins/ntracker_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - NTrackerSDKExt
 
 EXTERNAL SOURCES:
   Flutter:
@@ -21,7 +27,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
-  ntracker_flutter: 4e2daca936a73fc06057f8231be76f8dbb7115a2
+  ntracker_flutter: bdc276341e57c05cb60183a34d2cdae9f63becc3
+  NTrackerSDKExt: dec42299a34f9b75c2c7fa78fe2679a1b6500e36
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 
