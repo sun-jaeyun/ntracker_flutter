@@ -21,12 +21,14 @@ public class NtrackerFlutterPlugin: NSObject, FlutterPlugin {
   }
 
   private func initialize(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    guard let siteId = call.arguments as? String else {
+    guard let argMaps = call.arguments as? Dictionary<String, Any>,
+      let siteId = argMaps["siteId"],
+      let debug = argMaps["debug"] as? Bool else {
       result(FlutterError(code: call.method, message: "Missing argument", details: nil))
       return
     }
 
-    NTrackerExt.enableDebugLog(true)
+    NTrackerExt.enableDebugLog(debug)
     NTrackerExt.configure(serviceID: siteId, phase: .debug)
     result(true)
   }

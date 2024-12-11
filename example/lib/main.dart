@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
-    NtrackerFlutter.initialize('your siteId');
+    NtrackerFlutter.initialize('your siteId', debug: true);
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.

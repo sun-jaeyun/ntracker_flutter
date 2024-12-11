@@ -12,7 +12,7 @@ class NtrackerFlutter {
     return NtrackerFlutterPlatform.instance.getPlatformVersion();
   }
 
-  static Future<void> initialize(String siteId) {
-    return NtrackerFlutterPlatform.instance.initialize(siteId);
+  static Future<void> initialize(String siteId, {bool debug = false}) {
+    return NtrackerFlutterPlatform.instance.initialize(siteId, debug: debug);
   }
 }
