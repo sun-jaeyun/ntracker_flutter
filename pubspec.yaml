@@ -41,6 +41,9 @@ flutter:
     # -------------------
       ios:
         pluginClass: NtrackerFlutterPlugin
+      android:
+        package: com.sun_jaeyun.ntracker_flutter
+        pluginClass: NtrackerFlutterPlugin
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:

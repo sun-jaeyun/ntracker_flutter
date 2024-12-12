@@ -30,6 +30,7 @@ public class NtrackerFlutterPlugin: NSObject, FlutterPlugin {
 
     NTrackerExt.enableDebugLog(debug)
     NTrackerExt.configure(serviceID: siteId, phase: .debug)
+
     result(true)
   }
 }

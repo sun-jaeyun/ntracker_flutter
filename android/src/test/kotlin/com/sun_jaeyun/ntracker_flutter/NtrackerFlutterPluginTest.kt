@@ -1,4 +1,4 @@
-package com.example.ntracker_flutter
+package com.sun_jaeyun.ntracker_flutter
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
