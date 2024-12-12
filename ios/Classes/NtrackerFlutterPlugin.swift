@@ -22,7 +22,7 @@ public class NtrackerFlutterPlugin: NSObject, FlutterPlugin {
 
   private func initialize(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     guard let argMaps = call.arguments as? Dictionary<String, Any>,
-      let siteId = argMaps["siteId"],
+      let siteId = argMaps["ios"],
       let debug = argMaps["debug"] as? Bool else {
       result(FlutterError(code: call.method, message: "Missing argument", details: nil))
       return

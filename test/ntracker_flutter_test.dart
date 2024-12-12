@@ -9,7 +9,7 @@ class MockNtrackerFlutterPlatform with MockPlatformInterfaceMixin implements Ntr
   Future<String?> getPlatformVersion() => Future.value('42');
 
   @override
-  Future<void> initialize(String siteId, {bool debug = false}) {
+  Future<void> initialize({required String android, required String ios, bool debug = false}) {
     throw UnimplementedError();
   }
 }

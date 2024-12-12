@@ -36,7 +36,7 @@ class NtrackerFlutterPlugin: FlutterPlugin, MethodCallHandler {
         return
       }
 
-      val siteId = args["siteId"] as String
+      val siteId = args["android"] as String
       val debug = args["debug"] as Boolean
 
       NTrackerExt.enableDebugLog(debug)
