@@ -4,7 +4,10 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:ntracker_flutter/ntracker_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await NtrackerFlutter.initialize(android: 'your android siteId', ios: 'your ios siteId', debug: true);
+
   runApp(const MyApp());
 }
 
@@ -23,7 +26,6 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
-    NtrackerFlutter.initialize(android: 'your android siteId', ios: 'your ios siteId', debug: true);
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
