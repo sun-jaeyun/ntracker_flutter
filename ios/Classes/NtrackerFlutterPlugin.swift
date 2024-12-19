@@ -29,7 +29,7 @@ public class NtrackerFlutterPlugin: NSObject, FlutterPlugin {
     }
 
     NTrackerExt.enableDebugLog(debug)
-    NTrackerExt.configure(serviceID: siteId, phase: .debug)
+    NTrackerExt.configure(serviceID: siteId, phase: debug ? .debug : .Release)
 
     result(true)
   }
